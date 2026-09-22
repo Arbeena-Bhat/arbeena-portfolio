@@ -1,0 +1,42 @@
+---
+import Section from "./Section.astro";
+import type { SkillsProps } from "@types";
+
+interface Props {
+  skills: SkillsProps;
+}
+
+const { skills } = Astro.props;
+
+const categories = [
+  { title: "Languages", items: skills.languages },
+  { title: "AI & Data Science", items: skills.aiDataScience },
+  { title: "Computer Vision", items: skills.computerVision },
+  { title: "Frameworks & Tools", items: skills.frameworksTools },
+  { title: "Databases & OS", items: skills.databases },
+];
+---
+
+<Section text="Skills" href="skills">
+  <div class="grid gap-10 md:grid-cols-2">
+    {
+      categories.map(({ title, items }) => (
+        <div>
+          <h3 class="mb-4 font-serif text-2xl font-semibold text-primary">
+            {title}
+          </h3>
+
+          <div class="flex flex-wrap gap-3">
+            {
+              items.map((skill) => (
+                <span class="rounded-full border border-neutral/30 px-4 py-2 text-sm text-neutral">
+                  {skill}
+                </span>
+              ))
+            }
+          </div>
+        </div>
+      ))
+    }
+  </div>
+</Section>
