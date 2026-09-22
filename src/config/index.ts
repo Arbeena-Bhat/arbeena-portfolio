@@ -10,13 +10,14 @@ export const SITE_CONFIG: SiteConfig = {
 
   lang: "en",
 
-  // Temporary AstroZen image.
-  // We will replace this with your own photo later.
-  siteLogo: "/alejandro-small.jpg",
+  // Profile image is not used.
+  siteLogo: "",
 
   navLinks: [
+    { text: "Skills", href: "#skills" },
     { text: "Experience", href: "#experience" },
     { text: "Projects", href: "#projects" },
+    { text: "Education", href: "#education" },
     { text: "About", href: "#about" },
   ],
 
@@ -31,11 +32,8 @@ export const SITE_CONFIG: SiteConfig = {
     },
   ],
 
-  // Temporary AstroZen social image.
-  // We can replace this later with a custom portfolio image.
   socialImage: "/zen-og.png",
 
-  // We will replace this with your final Vercel URL later.
   canonicalURL: "https://arbeena-portfolio.vercel.app",
 };
 
@@ -50,6 +48,53 @@ export const SITE_CONTENT: SiteContent = {
 
     email: "arbeenanaseer543@gmail.com",
   },
+
+  // --------------------------------------------------
+  // SKILLS
+  // --------------------------------------------------
+
+  skills: {
+    languages: ["Python", "Java", "C", "HTML", "CSS"],
+
+    aiDataScience: [
+      "Machine Learning",
+      "Natural Language Processing",
+      "Deep Learning",
+      "Generative AI",
+      "RAG",
+      "CrewAI",
+    ],
+
+    computerVision: [
+      "OpenCV",
+      "NumPy",
+      "YOLO",
+      "ByteTrack",
+      "BoT-SORT",
+      "Jetson",
+    ],
+
+    frameworksTools: [
+      "FastAPI",
+      "Streamlit",
+      "Docker",
+      "Git",
+      "LangGraph",
+      "LangChain",
+    ],
+
+    databases: [
+      "MongoDB",
+      "PostgreSQL",
+      "SQL",
+      "Linux",
+      "Windows",
+    ],
+  },
+
+  // --------------------------------------------------
+  // EXPERIENCE
+  // --------------------------------------------------
 
   experience: [
     {
@@ -96,6 +141,10 @@ export const SITE_CONTENT: SiteContent = {
       ],
     },
   ],
+
+  // --------------------------------------------------
+  // PROJECTS
+  // --------------------------------------------------
 
   projects: [
     {
@@ -198,6 +247,32 @@ export const SITE_CONTENT: SiteContent = {
     },
   ],
 
+  // --------------------------------------------------
+  // EDUCATION
+  // --------------------------------------------------
+
+  education: [
+    {
+      degree: "Bachelor of Engineering — Computer Science",
+      institution: "ACS College of Engineering",
+      location: "Bangalore, Karnataka",
+      period: "2021–2025",
+      grade: "CGPA: 9.38",
+    },
+
+    {
+      degree: "Class XII",
+      institution: "Green Valley Educational Institute",
+      location: "Jammu & Kashmir",
+      period: "2019",
+      grade: "92.8%",
+    },
+  ],
+
+  // --------------------------------------------------
+  // ABOUT
+  // --------------------------------------------------
+
   about: {
     description: `
       Hi, I'm Arbeena Bhat, an AI/ML Developer interested in building practical and intelligent technology solutions.
@@ -211,8 +286,6 @@ export const SITE_CONTENT: SiteContent = {
       I also enjoy learning new technologies, solving technical problems, and turning ideas into practical working applications.
     `,
 
-    // Temporary AstroZen image.
-    // We will replace this with your own photo later.
-    image: "/alejandro-big.jpg",
+    image: "",
   },
 };
