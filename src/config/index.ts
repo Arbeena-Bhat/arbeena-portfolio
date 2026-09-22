@@ -285,7 +285,5 @@ export const SITE_CONTENT: SiteContent = {
 
       I also enjoy learning new technologies, solving technical problems, and turning ideas into practical working applications.
     `,
-
-    image: "",
   },
 };
