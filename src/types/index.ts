@@ -58,7 +58,6 @@ export interface EducationProps {
 
 export interface AboutProps {
   description: string;
-  image: string;
 }
 
 export interface HeaderProps {
